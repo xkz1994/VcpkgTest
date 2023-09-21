@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.26)
-#set(VCPKG_TARGET_TRIPLET "x86-windows" CACHE STRING "" FORCE) # 设置 vcpkg 的 triplet
 project(VcpkgTest)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -18,4 +17,4 @@ file(GLOB SRC_FILES
 
 add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES})
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE JsonCpp::JsonCpp)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${OpenCV_LIBS})
+#target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${OpenCV_LIBS})
